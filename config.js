@@ -1,3 +1,5 @@
+// Credenciales
+
 const config = {
     reddit: {
         clientId: 'jtYSZORr-brC-JAUYi7RJw',
