@@ -1,4 +1,4 @@
-import fetchDataReddit from '../fetchDataReddit.js';
+import { fetchDataReddit } from '../fetchDataReddit.js';
 
 async function testFetchDataReddit() {
     //const subreddits = ['chile', 'RepublicadeChile', 'Santiago', 'ChileIT', 'Chilefit'];

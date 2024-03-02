@@ -1,13 +1,15 @@
 import snoowrap from 'snoowrap';
 import config from './config.js';
 
-const reddit = new snoowrap({
+/*const reddit = new snoowrap({
     userAgent: config.reddit.userAgent,
-    clientId: config.reddit.clientID,
+    clientId: config.reddit.clientId,
     clientSecret: config.reddit.clientSecret,
     username: config.reddit.username,
     password: config.reddit.password
-});
+});*/
+
+const reddit = new snoowrap(config.reddit);
 
 // Función para obtener datos de Reddit
 async function fetchDataReddit(subreddits) {

@@ -1,6 +1,6 @@
 const config = {
     reddit: {
-        clientID: 'jtYSZORr-brC-JAUYi7RJw',
+        clientId: 'jtYSZORr-brC-JAUYi7RJw',
         clientSecret: '0bjsQAXSu9_yBhv_9DJq2qgjUOl-bg',
         username: 'bigentealfa',
         password: 'placebo_1649',
