@@ -16,7 +16,7 @@ async function testFetchDataReddit() {
                 console.log('Puntaje:', post.score);
                 console.log('URL:', post.url);
                 console.log('Created UTC:', post.created_utc);
-                console.log('---------------');
+                console.log('--------------');
             });
         });
     } catch (error) {
