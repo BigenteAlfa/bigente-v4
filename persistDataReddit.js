@@ -5,7 +5,7 @@ import config from './config.js';
 
 const pool = new Pool(config.db);
 
-async function fromRedditToSQL(posts) {
+async function persistDataReddit(posts) {
     const client = await pool.connect();
 
     try {
@@ -32,4 +32,4 @@ async function fromRedditToSQL(posts) {
     }
 }
 
-export default fromRedditToSQL;
+export default persistDataReddit;
