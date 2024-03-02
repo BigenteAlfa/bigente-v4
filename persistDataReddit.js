@@ -22,9 +22,9 @@ async function persistDataReddit(posts) {
             }));
         }));
 
-        console.log(`Posts de Reddit insertados correctamente.`);
+        console.log(`persistDataReddit ejecutado correctamente.`);
     } catch (error) {
-        console.error('Error al insertar datos de Reddit:', error);
+        console.error('Error en persistDatReddit:', error);
     } finally {
         client.release();
     }

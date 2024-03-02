@@ -7,10 +7,10 @@ export async function submitRedditChile(req, res) {
         const subreddits = ['chile'];
         const redditPosts = await fetchDataReddit(subreddits);
         await persistDataReddit(redditPosts);
-        console.log('Script ejecutado correctamente.');
-        //return res.status(200).send('Datos de Reddit insertados correctamente en la base de datos.');
+        console.log('submitDataReddit ejecutado correctamente.');
+        return res.status(200).send('Datos de Reddit insertados correctamente en la base de datos.');
     } catch (error) {
-        console.error('Error en el proceso:', error);
-        //res.status(500).send('Error en el proceso.');
+        console.error('Error en submitDataReddit:', error);
+        res.status(500).send('Error en el proceso.');
     }
 }

@@ -22,9 +22,10 @@ async function fetchDataReddit(subreddits) {
 
             outputData.push(mappedPosts);
         }
+        console.log(`fetchDataReddit ejecutado correctamente.`);
         return outputData;
     } catch (error) {
-        console.error('Error al obtener datos de Reddit:', error);
+        console.error('Error en fetchDataReddit:', error);
         throw error;
     }
 }
