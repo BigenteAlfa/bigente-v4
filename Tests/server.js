@@ -1,5 +1,5 @@
 import express from 'express';
-import { submitRedditChile } from '../submit_reddit_chile.js';
+import { submitRedditChile } from '../submitRedditChile.js';
 
 const app = express();
 

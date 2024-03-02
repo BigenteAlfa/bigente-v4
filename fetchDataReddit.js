@@ -1,7 +1,6 @@
 import snoowrap from 'snoowrap';
 import config from './config.js';
 
-// Configura la instancia de snoowrap con tus credenciales
 const reddit = new snoowrap({
     userAgent: config.reddit.userAgent,
     clientId: config.reddit.clientID,

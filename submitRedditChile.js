@@ -1,5 +1,5 @@
 import { fetchDataReddit } from './fetchDataReddit.js';
-import insertarDatosReddit from './fromRedditToSQL.js';
+import insertarDatosReddit from './persistDataReddit.js';
 
 export async function submitRedditChile(req, res) {
     try {
