@@ -1,6 +1,6 @@
 import { fetchDataReddit } from './fetchDataReddit.js';
 import persistDataReddit from './persistDataReddit.js';
-import topicsReddit from '/selectedSources/sourcesReddit.js';
+import topicsReddit from './selectedSources/sourcesReddit.js';
 
 export async function submitRedditChile(req, res) {
     try {
