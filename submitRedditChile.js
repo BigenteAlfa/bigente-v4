@@ -1,10 +1,11 @@
 import { fetchDataReddit } from './fetchDataReddit.js';
 import persistDataReddit from './persistDataReddit.js';
+import topicsReddit from '/selectedSources/sourcesReddit.js';
 
 export async function submitRedditChile(req, res) {
     try {
         //const subreddits = ['chile', 'RepublicadeChile', 'Santiago', 'ChileIT', 'Chilefit'];
-        const subreddits = ['chile'];
+        const subreddits = topicsReddit.chile;
         const redditPosts = await fetchDataReddit(subreddits);
         await persistDataReddit(redditPosts);
         console.log('submitDataReddit ejecutado correctamente.');
