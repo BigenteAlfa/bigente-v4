@@ -14,7 +14,7 @@ async function persistDataReddit(posts) {
                     INSERT INTO db_reddit_chile (id, title, subreddit, selftext, thumbnail, score, url, time_created, time_added)
                     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, NOW() AT TIME ZONE 'America/Santiago')
                     ON CONFLICT (id) DO UPDATE
-                    SET score = EXCLUDED.score, time_edited = CURRENT_TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Santiago'
+                    SET score = EXCLUDED.score, time_edited = NOW() AT TIME ZONE 'America/Santiago'
                     RETURNING time_edited;
                 `;
                 const values = [post.id, post.title, post.subreddit, post.selftext, post.thumbnail, post.score, post.url, post.created_utc];
